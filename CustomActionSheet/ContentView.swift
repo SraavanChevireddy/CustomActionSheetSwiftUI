@@ -9,8 +9,42 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showAction = false
+    @State var coloredView = false
     var body: some View {
-        Text("Hello, World!")
+        ZStack{
+            VStack{
+                // Action sheet Button
+                Button(action: {
+                    self.showAction.toggle()
+                    print("Changing the alert action!")
+                }){
+                    Text("Action Sheet")
+                        .font(.title)
+                }
+                
+                Button(action: {
+                    self.coloredView.toggle()
+                }){
+                    Text("Colored View")
+                        .foregroundColor(.secondary)
+                }.sheet(isPresented: $coloredView) {
+                    ColoredView()
+                }
+                
+            }
+            
+            VStack{
+                Spacer()
+                CustomActionSheet().offset(y: self.showAction ? 0 : UIScreen.main.bounds.height)
+            }.background((self.showAction ? Color.black.opacity(0.3) : Color.clear).edgesIgnoringSafeArea(.all).onTapGesture {
+                print("Action performed on tapping the background!")
+                self.showAction.toggle()
+            })
+            .edgesIgnoringSafeArea(.bottom)
+        }
+        .animation(.default)
+        
     }
 }
 

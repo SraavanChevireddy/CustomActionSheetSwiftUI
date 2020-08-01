@@ -14,6 +14,8 @@
 		3C0C005E24D5497C002947FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C005D24D5497C002947FE /* Assets.xcassets */; };
 		3C0C006124D5497C002947FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C006024D5497C002947FE /* Preview Assets.xcassets */; };
 		3C0C006424D5497C002947FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C006224D5497C002947FE /* LaunchScreen.storyboard */; };
+		3C0C006C24D549CC002947FE /* CustomActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C006B24D549CC002947FE /* CustomActionSheet.swift */; };
+		3C0C006E24D5529E002947FE /* ColoredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C006D24D5529E002947FE /* ColoredView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		3C0C006024D5497C002947FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3C0C006324D5497C002947FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C0C006524D5497C002947FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C0C006B24D549CC002947FE /* CustomActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActionSheet.swift; sourceTree = "<group>"; };
+		3C0C006D24D5529E002947FE /* ColoredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 		3C0C004824D5497A002947FE = {
 			isa = PBXGroup;
 			children = (
+				3C0C006B24D549CC002947FE /* CustomActionSheet.swift */,
 				3C0C005324D5497B002947FE /* CustomActionSheet */,
 				3C0C005224D5497B002947FE /* Products */,
 			);
@@ -61,6 +66,7 @@
 				3C0C005424D5497B002947FE /* AppDelegate.swift */,
 				3C0C005624D5497B002947FE /* SceneDelegate.swift */,
 				3C0C005B24D5497B002947FE /* ContentView.swift */,
+				3C0C006D24D5529E002947FE /* ColoredView.swift */,
 				3C0C005D24D5497C002947FE /* Assets.xcassets */,
 				3C0C006224D5497C002947FE /* LaunchScreen.storyboard */,
 				3C0C006524D5497C002947FE /* Info.plist */,
@@ -151,8 +157,10 @@
 			files = (
 				3C0C005A24D5497B002947FE /* CustomActionSheet.xcdatamodeld in Sources */,
 				3C0C005524D5497B002947FE /* AppDelegate.swift in Sources */,
+				3C0C006C24D549CC002947FE /* CustomActionSheet.swift in Sources */,
 				3C0C005C24D5497B002947FE /* ContentView.swift in Sources */,
 				3C0C005724D5497B002947FE /* SceneDelegate.swift in Sources */,
+				3C0C006E24D5529E002947FE /* ColoredView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
